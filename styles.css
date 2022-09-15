@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100vw;
+    height: 700px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.bars_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.bar {
+    display: inline-block;
+    width: 7px;
+    background-color: orange;
+    margin: 0 2px;
+    transition: height 0.15s ease-in-out;
+    border-radius: 2px;
+}
+
+.buttons-container {
+    margin-left: 750px;
+    display: inline-block;
+}
+
+.randomize-button,
+.sort-button,
+.algorithm-select {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    background-color: orange;
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.randomize-button:hover,
+.sort-button:hover,
+.algorithm-select:hover {
+    opacity: 0.7;
+}
+
+.algorithm-select * {
+    font-weight: bold;
+}
+
+body {
+    background-color: rgba(29, 58, 102, 0.907);
+}
